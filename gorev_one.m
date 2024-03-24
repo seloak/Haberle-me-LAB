@@ -144,9 +144,42 @@ title('Noisy Signal z(t)');
 xlabel('Time (s)');
 ylabel('Amplitude');
 
+% Calculate the histogram of the noisy signal z(t) with 100 bins
+hist_bins = 100;
+hist_values = hist(x_t, hist_bins);
+
+% Create a vector for the bin centers
+bin_centers = linspace(min(x_t), max(x_t), hist_bins);
+
+
+subplot(2,1,1);
+bar(bin_centers, hist_values);
+
+title('Histogram of Noisy Signal x(t)');
+xlabel('Amplitude');
+ylabel('Frequency');
+
+
+% Calculate the histogram of the noisy signal z(t) with 100 bins
+hist_bins = 100;
+hist_values = hist(z_t, hist_bins);
+
+% Create a vector for the bin centers
+bin_centers = linspace(min(z_t), max(z_t), hist_bins);
+
+% Plot the histogram
+subplot(2,1,2);
+bar(bin_centers, hist_values);
+title('Histogram of Noisy Signal z(t)');
+xlabel('Amplitude');
+ylabel('Frequency');
+
+
+
+
+
 % Calculate SNR (Signal-to-Noise Ratio)
 SNR = 10 * log10(sum(x_t.^2) / sum(n.^2));
-
 disp(['SNR: ', num2str(SNR), ' dB']);
 
 
