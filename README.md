@@ -1,0 +1,11 @@
+MATLAB programme setup information, 
+Experiment 1: Introduction to MATLAB (Group Study), 
+Experiment 2: Fourier transform (Group Study), 
+Experiment 3: Digital Filters (Group Study),
+Experiment 4: Amplitude modulation and demodulation (Group Study),
+Experiment 5: Frequency modulation and demodulation (Group Study), 
+Experiment 6: Sampling (Experiment Design), 
+Experiment 7: Pulse code modulation (Single Study), 
+Experiment 8: Amplitude shift keying (Single Study), 
+Experiment 9: Phase shift keying (Single Study), 
+Experiment 10: Frequency shift keying (Single Study).
